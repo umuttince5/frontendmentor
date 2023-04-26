@@ -83,6 +83,9 @@ a:hover {
 }
 
 .proceed-btn {
+   -webkit-box-shadow: 0px 10px 34px -5px rgba(42,19,194,1);
+   -moz-box-shadow: 0px 10px 34px -5px rgba(42,19,194,1);
+   box-shadow: 0px 10px 34px -5px rgba(42,19,194,1);
    background-color: hsl(245, 75%, 52%);
    border-radius: 12px;
    text-align: center;
