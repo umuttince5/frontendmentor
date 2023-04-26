@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@100;300;400&family=Red+Hat+Display:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: hsl(244, 38%, 16%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.left-side {
+    padding: 15%;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    
+}
+
+h2 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.subtitle {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 10px;
+    padding-top: 7%;
+}
+
+.stat-box {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 20%;
+}
+
+.stat-box p.num {
+    color: white;
+}
+
+.stat-box p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 10px;
+}
+
+.right-side img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: right;
+}
