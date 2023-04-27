@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    overflow: hidden;
+    border: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a" "b c";
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.box {
+    padding: 60px;
+}
+
+.join {
+    grid-area: a;
+}
+
+.sub {
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.why {
+    grid-area: c;
+    background-color: hsl(179, 62%, 53%);
+}
+
+h1 {
+    font-size: 42px;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 20px;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+
+h2 {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+h5 span.price {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+h5 span {
+    color:  hsl(204, 43%, 83%);
+    font-weight: 400;
+}
+
+.sub p {
+    font-size: 13px;
+    color:  hsl(204, 43%, 93%);
+}
+
+.sub a {
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    margin-top: 42px;
+}
+
+.sub a:hover {
+    text-decoration: underline;
+    box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.81);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.81);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.81);
+}
+
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    color: hsl(204, 43%, 89%);
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas: "a""b""c";
+    }
+    
+    .why {
+      order: 3;
+    }
+  }
+  
