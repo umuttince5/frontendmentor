@@ -33,7 +33,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.container {
+    margin: 0 auto;
+}
 .card {
     background-color: var(--White);
     display: flex;
@@ -202,3 +204,10 @@ body {
     background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .summary {
+      width: 100%;
+    }
+  }
+  
