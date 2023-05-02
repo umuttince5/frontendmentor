@@ -40,8 +40,9 @@ body {
 
 .img-overlay {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
     background-color:  hsla(178, 100%, 50%, 0.5);
@@ -51,8 +52,8 @@ body {
 .img-overlay img {
     position: absolute;
     width: 50px;
-    left: 50px;
-    top: 50px;
+    left: 50%;
+    top: 50%;
     transform: translate(-50% , -50%);
 }
 
@@ -69,6 +70,10 @@ body {
     font-size: 24px;
 }
 
+.text-box a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
 p {
     color: hsl(215, 51%, 70%);
 }
@@ -77,10 +82,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 52 px 0;
+    padding: 25px 0;
 }
 
-.ether , .days {
+.ether , 
+.day {
     display: flex;
     align-items: center;
 }
@@ -92,7 +98,7 @@ p {
     padding-left: 5px;
 }
 
-.days p {
+.day p {
     padding-left: 5px;
 }
 
@@ -119,7 +125,9 @@ hr {
     font-size: 16px;
 }
 
-
+.author p a.name:hover {
+    color: hsl(178, 100%, 50%);
+}
 
 
 
