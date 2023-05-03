@@ -1,0 +1,141 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+:root {
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-desktop.svg), 
+        url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1110px;
+}
+
+.top-side {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.header , .rates {
+    width: 50%;
+    color: var(--Very-Dark-Magenta);
+}
+.header{
+    padding-right: 120px;
+}
+
+.header h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: .8;
+}
+
+.header p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.rates {
+}
+
+.rate {
+    margin-top: 20px;
+    display: flex;
+    background: var(--Light-Grayish-Magenta);
+    padding: 15px 20px;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 75%;
+}
+.stars {
+    display: flex;
+}
+.stars img {
+    display: block;
+    margin: 4px;
+}
+
+.rate h4 {
+    margin-left: 30px;
+}
+
+.guru {
+    margin-left: 50px;
+}
+
+.besttech {
+    margin-left: 100px;
+}
+
+.bot-side {
+    margin-top: 50px;
+}
+
+.box {
+    margin-right: 5px;
+}
+
+.comment-boxes  {
+    display: flex;
+    background: var(--Very-Dark-Magenta);
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-bottom img {
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.name h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.name h6 {
+    color: var(--Soft-Pink);
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+.box p {
+    margin-top: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+}
