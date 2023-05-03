@@ -98,15 +98,16 @@ body {
 }
 
 .box {
-    margin-right: 5px;
+    margin-right: 20px;
+    justify-content: space-between;
+    background: var(--Very-Dark-Magenta);
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .comment-boxes  {
     display: flex;
-    background: var(--Very-Dark-Magenta);
     align-items: center;
-    border-radius: 20px;
-    padding: 30px;
     color: white;
 }
 
@@ -138,4 +139,12 @@ body {
     margin-top: 30px;
     line-height: 1.5;
     font-weight: 400;
+}
+
+.box2 {
+    margin-top: 50px;
+}
+
+.box3 {
+    margin-top: 100px;
 }
